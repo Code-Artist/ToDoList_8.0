@@ -903,7 +903,7 @@ BOOL GraphicsMisc::ForceIconicRepresentation(HWND hWnd, BOOL bForce)
 # define DWMWA_FORCE_ICONIC_REPRESENTATION 7
 #endif
 	
-	return DwmSetWindowAttribute(hWnd, DWMWA_FORCE_ICONIC_REPRESENTATION, &bForce, sizeof(bForce));
+	return GraphicsMisc::DwmSetWindowAttribute(hWnd, DWMWA_FORCE_ICONIC_REPRESENTATION, &bForce, sizeof(bForce));
 }
 
 BOOL GraphicsMisc::EnableAeroPeek(HWND hWnd, BOOL bEnable)
@@ -914,7 +914,7 @@ BOOL GraphicsMisc::EnableAeroPeek(HWND hWnd, BOOL bEnable)
 	
 	BOOL bDisallow = !bEnable;
 	
-	return DwmSetWindowAttribute(hWnd, DWMWA_DISALLOW_PEEK, &bDisallow, sizeof(bDisallow));
+	return GraphicsMisc::DwmSetWindowAttribute(hWnd, DWMWA_DISALLOW_PEEK, &bDisallow, sizeof(bDisallow));
 }
 
 BOOL GraphicsMisc::GetExtendedFrameBounds(HWND hWnd, CRect& rBounds)
@@ -923,7 +923,7 @@ BOOL GraphicsMisc::GetExtendedFrameBounds(HWND hWnd, CRect& rBounds)
 # define DWMWA_EXTENDED_FRAME_BOUNDS 9
 #endif
 
-	return DwmGetWindowAttribute(hWnd, DWMWA_EXTENDED_FRAME_BOUNDS, &rBounds, sizeof(rBounds));
+	return GraphicsMisc::DwmGetWindowAttribute(hWnd, DWMWA_EXTENDED_FRAME_BOUNDS, &rBounds, sizeof(rBounds));
 }
 
 BOOL GraphicsMisc::EnableFlip3D(HWND hWnd, BOOL bEnable)
@@ -937,7 +937,7 @@ BOOL GraphicsMisc::EnableFlip3D(HWND hWnd, BOOL bEnable)
 	
 	int nPolicy = bEnable ? DWMFLIP3D_DEFAULT : DWMFLIP3D_EXCLUDEBELOW;
 	
-	return DwmSetWindowAttribute(hWnd, DWMWA_FLIP3D_POLICY, &nPolicy, sizeof(nPolicy));
+	return GraphicsMisc::DwmSetWindowAttribute(hWnd, DWMWA_FLIP3D_POLICY, &nPolicy, sizeof(nPolicy));
 }
 
 BOOL GraphicsMisc::DwmSetWindowAttribute(HWND hWnd, DWORD dwAttrib, LPCVOID pData, DWORD dwDataSize)

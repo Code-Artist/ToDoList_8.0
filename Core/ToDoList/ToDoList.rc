@@ -4663,7 +4663,7 @@ BEGIN
     IDS_TRANSFORMFILEFILTER "Web Page (*.htm, *.html)|*.htm;*.html|Text File (*.txt)|*.txt|All Files (*.*)|*.*||"
     IDS_ALLFILEFILTER       "All Files (*.*)|*.*||"
     IDS_RECENTFILES         "Recent Tasklists"
-    IDS_COPYRIGHT           "ToDoList (c) AbstractSpoon"
+    IDS_COPYRIGHT           "JustDoList (c) AbstractSpoon"
     IDS_SAVETASKLIST_TITLE  "Save Tasklist"
     IDS_SAVEREADONLY        "'%s' could not be saved because the file is read-only.\n\nPlease select another filename."
     IDS_PREF_UISORTING      "User Interface>General>Sorting"
@@ -4955,7 +4955,7 @@ END
 
 STRINGTABLE DISCARDABLE 
 BEGIN
-    IDR_MAINFRAME           "ToDoList (c) AbstractSpoon"
+    IDR_MAINFRAME           "JustDoList (c) AbstractSpoon"
     IDS_SAMPLETASK          "Sample Task"
     IDS_BACKUPFILEFOUND     "ToDoList has detected a backup version of file '%s', \nwhich suggests that there was previously a problem saving the tasklist.\n\nWould you like to restore the backup?"
     IDS_COLOR_SAMPLETEXT    "Sample Text"

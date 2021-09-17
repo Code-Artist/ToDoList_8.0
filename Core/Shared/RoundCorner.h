@@ -33,8 +33,8 @@ enum
 	RC_THIN			= 0x0010, // single pixel wide
 	RC_RENDER		= 0x0020, // full 3d style. requires RC_EDGES too.
 	RC_EDGES		= 0x0040, // draw lines between corners if there is any space
-	RC_DOWN			= 0x0100, // reverses the colors
-	RC_UP			= 0x0200,
+//	RC_DOWN			= 0x0100, // reverses the colors
+//	RC_UP			= 0x0200,
 //	RC_DEFBTN		= 0x0400,
 };
 
