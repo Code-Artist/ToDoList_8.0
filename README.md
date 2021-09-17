@@ -50,3 +50,6 @@ enum
 
 struct Corner;
 ```
+
+#### LINK2026: module unsafe for SAFESH image
+**Solution:**Disable option /SAFESH in Configuration > Linker > Advanced
